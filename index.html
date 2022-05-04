@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/assets/style.css">
+    <title>Simple Form </title>
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/media/boy.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+
+
+
+    
+
+
 </head>
 <body>
 
     <!-- navbar -->
     <div class="nav">
         <div class="container nav-container">
-            <a href="index.html" class="logo"> Hi-tech</a>
+            <a href="index.html" class="logo"><img src="/assets/media/boy.png" alt=""></a><span>Ehiz-Dandy</span>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><a href="">Service</a></li>
                 <li><a href="">Blog</a></li>
             </ul>
@@ -27,18 +36,18 @@
     <!-- hero -->
     <section id="hero">
         <div class="container hero-container">
-            <div class="hero-text" data-aos="fade-right" data-aos-duration="2500">
-                <h2>Hi-Tech</h2>
+            <div class="hero-text" data-aos="fade-left" data-aos-duration="2500">
+                <h2>Davidson E</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aliquam exercitationem aspernatur, perspiciatis delectus iusto fugiat quia a nisi dignissimos illum, incidunt laborum ea, soluta nobis possimus corporis accusamus dolore?
+                    Davidson E is a good guy, new into the fullstack world, having a keen interest in all that is with web-Development. just exploring his ideas in the HTML, CSS & JS universe. trying to create innovative and attractive web pages
                 </p>
-                <a href="" class="btn btn-primary">Learn More</a>
+                <a href="" class="btn btn-info">more info</a>
             </div>
-            <div class="hero-form" data-aos="fade-left" data-aos-duration="3000">
+            <div class="hero-form" data-aos="fade-right" data-aos-duration="3000">
                 <div class="card hero-card">
                     <h3>Send A Request</h3>
                     <form action="https://formspree.io/f/mvolvyep" method="post" id="my-form">
-                        <input type="text" name="fullname" placeholder="Enter Name">
+                        <input type="text" name="fullname" placeholder="Enter FullName">
                         <input type="text" name="email" placeholder="Enter Email">
                         <input type="text" name="phone" placeholder="Enter Phone number">
                         <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
@@ -48,7 +57,70 @@
             </div>
         </div>
     </section>
+
+    <!-- about  -->
+    <section id="about" >
+        <div class="container" data-aos="zoom-in-up" data-aos-duration="2500">
+            <h2>About</h2>
+            <p>Results-oriented individual, who also believes not only on the structures of his own idea but greatly values, and also encourages the profound ideas of others.
+            </p>
+        </div> <br> 
+        <div class="container biodata" >
+            <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>April 27 </span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Lagos, Nigeria</span></li>
+            </ul>
+            <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>E-mail:</strong> <span>esezobord@gmail.com</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+            </ul>
+        </div>
+        <div class="skill">
+            <h3>skills</h3>
+            <br>
+            <div class="skill-list">
+                <ul>
+                    <li> <p> HTML</p></li>
+                    <li> <P>BOOTSTRAP</P> </li>
+                </ul>
+                <ul>
+                    <li> <p> CSS</p></li>
+                    <li> <P>JAVASCRIPT</P> </li>
+                </ul>
+                <ul>
+                    <li> <p> GITBASH/GITHUB</p></li>
+                    <li> <P>PYTHON</P> </li>
+                </ul>
+
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <!-- contact  -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <ul data-aos="flip-up" data-aos-duration="1500">
+                <li> <a href="https://www.facebook.com/esezobor.bishop" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a> </li>
+                <li> <a href="https://twitter.com/SoulofMischeif" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a></li>
+                <li> <a href="https://github.com/EhizBishop" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a></li>
+                <li> <a href="http://wa.me/2348052750517" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a></li>
+                <li> <a href="http://instagram.com/bishopehiz" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    
+
+
+
+
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="assets/main.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -1,11 +1,11 @@
 :root{
-    --primary-color:#01011c;
-    --primary-color-light:#070771;
+    --primary-color:#534293;
+    --primary-color-light:#a997ea;
     --white:#ffffff;
-    --black : #000;
-    --light-black:#3333;
-    --light-white:#f9f9f9;
-    --transition: all 3s ease;
+    --black : #eb5951;
+    --light-black: #cc41ff;
+    --light-white:#05bbaa;
+    --transition: all 3s ease-out;
 }
 
 *{
@@ -49,15 +49,19 @@ html{
     top: 0;
     left: 0;
 }
+
 .nav-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.nav .logo{
-    font-size: 2rem;
-    font-weight: bold;
-    color: var(--white);
+   
+.nav .logo img{
+    width: 4.8rem; height: 3.6rem;
+    border-radius: 1.7rem;
+}
+.nav  span{
+    font-size: 3rem;
 }
 .nav-container li{
     display: inline;
@@ -66,17 +70,18 @@ html{
 .nav li a{
     color: var(--white);
     padding: 0 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-style: italic;
 }
 .nav li a::before{
     content: '';
     height: .2rem;
-    background:var(--white);
+    background:var(--light-black);
     position: absolute;
     top: 3.7rem;
     transform: scaleX(0);
     transform-origin: left;
-    width: 10%;
+    width: 3%;
     transition: all .4s ease
 }
 .nav li a:hover::before{
@@ -88,8 +93,8 @@ html{
 #hero{
     /* background: var(--light-white); */
     height: 75vh;
-    background: var(--light-black);
-    padding: 6rem 0;
+    background: url(/assets/media/dark-wallpapers.webp);background-size:100vh; background-size: cover;
+    padding: 5rem 0;
     position: relative;
     overflow: visible;
 }
@@ -102,10 +107,13 @@ html{
 #hero .hero-text h2{
     font-size: 2.5rem;
     font-weight: bold;
+    color: var(--black);
+    
 }
 #hero .hero-text p{
     color: var(--primary-color-light);
     margin: 0 0 2.5rem;
+    font-style: italic;
 }
 #hero .hero-text a{
     margin: 2rem 0;
@@ -113,7 +121,7 @@ html{
 
 #hero .hero-form .hero-card{
     height: 85vh;
-    background: var(--primary-color);
+    background: var(--light-black);
     color: var(--white);
 }
 #hero .hero-form .hero-card h3{
@@ -121,7 +129,7 @@ html{
     color: var(--white);
     padding: .7rem;
     font-size: 2rem;
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 
 #hero .hero-form .hero-card input[type='text'],#hero .hero-form .hero-card textarea{
@@ -137,6 +145,7 @@ html{
 
 #hero .hero-form .hero-card input::placeholder,#hero .hero-form .hero-card textarea::placeholder{
     color: var(--white);
+    font-style: italic;
 }
 #hero .hero-form .hero-card input:focus{
     color: var(--white);
@@ -146,12 +155,125 @@ html{
     transition: all 4s ease;
     font-size: .5rem;
 }
+/* about */
+#about {
+    padding-top: 10rem;
+    align-items: center;
+    background: #a997ea;
+    padding-bottom: 3rem;
+}
+#about .biodata {
+    display: flex;
+    justify-content: space-evenly;
+}
+#about h2 {
+    text-align: center;
+    font-size: 4rem;
+    color:var(--white);
+    justify-content: center;
+    position: relative;
+}
+#about p{
+    text-align: center;
+}
+#about .biodata i{
+    color: var(--white);
+}
+#about .biodata span{
+    font-style: italic;
+}
+#about .skill h3{
+    text-align: center;
+    font-size: 2rem;
+}
+#about .skill-list{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    font-style: italic;
+}
+#about h2::before{
+    content: '';
+    height: .2rem;
+    background:var(--light-black);
+    position: absolute;
+    top: 4.9rem;
+    width: 13%;
+    display: block;
+    left: calc(43.5%);
+}
+
+/* contact */
+#contact {
+    background: #534293;
+    text-align: center;
+}
+#contact h2 {
+    font-size: 4rem;
+    color: var(--white);position: relative;
+}
+#contact h2::before{
+    content: '';
+    height: .2rem;
+    background:var(--light-black);
+    position: absolute;
+    top: 4.9rem;
+    width: 16.5%;
+    display: block;
+    left: calc(42%);
+}
+#contact i{
+    font-size: 3rem;
+}
+#contact .bi-facebook{
+    color: rgb(66, 103, 178);
+}
+#contact .bi-twitter{
+    color: rgb(0, 172, 238);
+}
+#contact .bi-github{
+    color: #171515;
+}
+#contact .bi-whatsapp{
+    color: #25d366;
+}
+#contact .bi-instagram{
+    color: rgb(128, 52, 175);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width:500px){
     /* :::: nav :::: */
 .nav{
-    background: var(--primary-color);
+    background: url(/assets/media/5.png);background-repeat:repeat-x;
     color: var(--white);
     height: 6rem;
     /* padding: 1rem 0; */
